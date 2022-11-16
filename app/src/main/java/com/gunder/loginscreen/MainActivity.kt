@@ -100,7 +100,7 @@ fun Login(videoUri: Uri) {
             verticalArrangement = Arrangement.spacedBy(16.dp, alignment = Alignment.Bottom),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Icon(painter = painterResource(id = R.drawable.ic_logo),
+            Icon(painter = painterResource(id = R.drawable.ic_people),
                 contentDescription = null,
                 Modifier.size(80.dp), tint = Color.White)
             TextInput(InputType.Name, keyboardActions = KeyboardActions(onNext = {
