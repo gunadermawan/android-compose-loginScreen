@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
                 // A surface container using the 'background' color from the theme
                 Surface(modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background) {
-                    Greeting("Android")
+                    login()
                 }
             }
         }
@@ -28,14 +28,6 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
+fun login() {
 
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    LoginScreenTheme {
-        Greeting("Android")
-    }
 }
