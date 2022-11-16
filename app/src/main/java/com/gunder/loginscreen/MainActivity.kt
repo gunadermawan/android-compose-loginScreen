@@ -29,6 +29,7 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import com.google.accompanist.insets.ProvideWindowInsets
@@ -76,6 +77,7 @@ private fun Context.buildPlayerPreview(exoPlayer: ExoPlayer) = StyledPlayerView(
 }
 
 @Composable
+@Preview
 fun Login(videoUri: Uri) {
     val context = LocalContext.current
     val passwordRequester = FocusRequester()
@@ -164,7 +166,7 @@ fun TextInput(
             focusedIndicatorColor = Color.Transparent,
             unfocusedIndicatorColor = Color.Transparent,
             disabledIndicatorColor = Color.Transparent,
-            backgroundColor = Color.White
+            backgroundColor = MaterialTheme.colors.background
         ),
         singleLine = true,
         keyboardOptions = inputType.keyboardOptions,
